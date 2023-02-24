@@ -1,16 +1,30 @@
-import meter1 from "../assets/img/meter1.svg";
-import meter2 from "../assets/img/meter2.svg";
-import meter3 from "../assets/img/meter3.svg";
-import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import arrow1 from "../assets/img/arrow1.svg";
-import arrow2 from "../assets/img/arrow2.svg";
+import Carousel from 'react-multi-carousel';
+
+import mongodb from "../assets/img/mongodb.svg";
+import nodejs from "../assets/img/nodejs.svg";
+import react from "../assets/img/react.svg";
+import wordpress from "../assets/img/wordpress.svg";
+import figma from "../assets/img/figma.svg";
+import mysql from "../assets/img/mysql.svg";
+import typescript from "../assets/img/typescript.svg";
+import html from "../assets/img/html.svg";
+import css from "../assets/img/css.svg";
+import javascript from "../assets/img/javascript.svg";
+import redux from "../assets/img/redux.svg";
+import bootstrap from "../assets/img/bootstrap.svg";
+import python from "../assets/img/python.svg";
+import docker from "../assets/img/docker.svg";
+import git from "../assets/img/git.svg";
+import github from "../assets/img/github.svg";
+import npm from "../assets/img/npm.svg";
+import vscode from "../assets/img/vscode.svg";
+import jwt from "../assets/img/jwt.svg";
 import colorSharp from "../assets/img/color-sharp.png"
 
 export const Skills = () => {
   const responsive = {
     superLargeDesktop: {
-      // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
       items: 5
     },
@@ -36,29 +50,89 @@ export const Skills = () => {
                     <div className="skill-bx wow zoomIn">
                         <h2>Skills</h2>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br></br> Lorem Ipsum has been the industry's standard dummy text.</p>
-                        <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
+                        <Carousel responsive={responsive} infinite={true} autoPlay swipeable className="owl-carousel owl-theme skill-slider">
                             <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>Web Development</h5>
+                                <img src={mongodb} alt="MongoDB Logo" />
+                                <h5>MongoDB</h5>
                             </div>
                             <div className="item">
-                                <img src={meter2} alt="Image" />
-                                <h5>Brand Identity</h5>
+                                <img src={react} alt="React Logo" />
+                                <h5>React</h5>
                             </div>
                             <div className="item">
-                                <img src={meter3} alt="Image" />
-                                <h5>Logo Design</h5>
+                                <img src={nodejs} alt="Node JS Logo" />
+                                <h5>Node JS</h5>
                             </div>
                             <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>Web Development</h5>
+                                <img src={wordpress} alt="WordPress Logo" />
+                                <h5>WordPress</h5>
+                            </div>
+                            <div className="item">
+                                <img src={figma} alt="Figma Logo" />
+                                <h5>Figma</h5>
+                            </div>
+                            <div className="item">
+                                <img src={mysql} alt="MySQL Logo" />
+                                <h5>MySQL</h5>
+                            </div>
+                            <div className="item">
+                                <img src={typescript} alt="TypeScript Logo" />
+                                <h5>TypeScript</h5>
+                            </div>
+                            <div className="item">
+                                <img src={html} alt="HTML5 Logo" />
+                                <h5>HTML 5</h5>
+                            </div>
+                            <div className="item">
+                                <img src={css} alt="CSS3 Logo" />
+                                <h5>CSS 3</h5>
+                            </div>
+                            <div className="item">
+                                <img src={javascript} alt="JavaScript Logo" />
+                                <h5>JavaScript</h5>
+                            </div>
+                            <div className="item">
+                                <img src={redux} alt="Redux Logo" />
+                                <h5>Redux</h5>
+                            </div>
+                            <div className="item">
+                                <img src={bootstrap} alt="Bootstrap Logo" />
+                                <h5>Bootstrap</h5>
+                            </div>
+                            <div className="item">
+                                <img src={python} alt="Python Logo" />
+                                <h5>Python</h5>
+                            </div>
+                            <div className="item">
+                                <img src={docker} alt="Docker Logo" />
+                                <h5>Docker</h5>
+                            </div>
+                            <div className="item">
+                                <img src={git} alt="Git Logo" />
+                                <h5>Git</h5>
+                            </div>
+                            <div className="item">
+                                <img src={github} alt="GitHub Logo" />
+                                <h5>GitHub</h5>
+                            </div>
+                            <div className="item">
+                                <img src={npm} alt="NPM Logo" />
+                                <h5>NPM</h5>
+                            </div>
+                            <div className="item">
+                                <img src={vscode} alt="VS Code Logo" />
+                                <h5>Visual Studio Code</h5>
+                            </div>
+                            <div className="item">
+                                <img src={jwt} alt="JWT Logo" />
+                                <h5>Json Web Token</h5>
                             </div>
                         </Carousel>
                     </div>
                 </div>
             </div>
         </div>
-        <img className="background-image-left" src={colorSharp} alt="Image" />
+        <img className="background-image-left" src={colorSharp} alt="Background" />
     </section>
   )
 }
