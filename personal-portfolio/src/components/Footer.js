@@ -22,7 +22,7 @@ export const Footer = () => {
               <a href="https://instagram.com/codereview0"><img src={navIcon3} alt="Perfil Social do Instagram" /></a>
               <a href="mailto:tiagordebarros@gmail.com"><img src={navIcon4} alt="Ícone do Gmail" /></a>
             </div>
-            <p>Copyright 2023. All Rights Reserved</p>
+            <p>Parceiros de Negócio © 2023.<br></br>Todos os direitos reservados.</p>
           </Col>
         </Row>
       </Container>
