@@ -5,6 +5,7 @@ import { Download } from 'react-bootstrap-icons';
 import TrackVisibility from 'react-on-screen';
 
 import headerImg from "../assets/img/header-img.png";
+import { downloadLocalFile } from '../helpers/downloadLocalFile';
 
 export function Banner() {
   const [loopNum, setLoopNum] = useState(0);
@@ -57,7 +58,7 @@ export function Banner() {
                 <span className="tagline">Olá, eu sou o Tiago!</span>
                 <h1>{` `} <span className="txt-rotate" data-period="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
                 <p>Bem vindo ao meu Portfólio Web! Eu sou Desenvolvedor Web Full Stack. Sou brasileiro nato e resido atualmente no Brasil, mas morei quase quatro anos na Suíça. Minha stack favorita é a MongoDB + Express + React + Node.JS (MERN). Também sou fascinado pelo mundo do WordPress! Sinta-se livre para entrar em contato comigo!</p>
-                <button onClick={() => console.log('download')}>Download do meu currículo<Download size={25} /></button>
+                <button onClick={() => downloadLocalFile('tiago-ribeiro-de-barros-curriculo.pdf')}>Download do meu currículo<Download size={25} /></button>
               </div>}
             </TrackVisibility>
           </Col>
