@@ -1,37 +1,22 @@
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
+import expressDelivery from "../assets/img/express-delivery-banner.png";
+import cozinhandoComAdri from "../assets/img/cozinhando-com-a-adri-banner.png";
+import triviaChallenge from "../assets/img/trivia-challenge-banner.png";
 
 const prototypesProjects = [
   {
-    title: "Business Startup",
+    title: "Express Delivery",
     description: "Design & Development",
-    imgUrl: projImg1,
+    imgUrl: expressDelivery,
   },
   {
-    title: "Business Startup",
+    title: "Cozinhando com a Adri",
     description: "Design & Development",
-    imgUrl: projImg2,
+    imgUrl: cozinhandoComAdri,
   },
   {
-    title: "Business Startup",
+    title: "Trivia Challenge",
     description: "Design & Development",
-    imgUrl: projImg3,
-  },
-  {
-    title: "Business Startup",
-    description: "Design & Development",
-    imgUrl: projImg1,
-  },
-  {
-    title: "Business Startup",
-    description: "Design & Development",
-    imgUrl: projImg2,
-  },
-  {
-    title: "Business Startup",
-    description: "Design & Development",
-    imgUrl: projImg3,
+    imgUrl: triviaChallenge,
   },
 ];
 
