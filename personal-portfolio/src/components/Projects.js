@@ -6,16 +6,14 @@ import { ProjectCard } from "./ProjectCard";
 import { professional, educational, prototypes } from "../projects";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 
-export const Projects = () => {
-
+export function Projects() {
   return (
     <section className="project" id="project">
       <Container>
         <Row>
           <Col size={12}>
             <TrackVisibility>
-              {({ isVisible }) =>
-              <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
+              {({ isVisible }) => <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <h2>Projetos</h2>
                 <p>Abaixo, você pode conferir os projetos que desenvolvi (ou estou desenvolvendo) tanto em âmbito profissional quanto educacional. <br></br>A seleção das teconologias utilizadas nos projetos depende exclusivamente das necessidade do cliente ou do projeto em questão. O deploy não foi realizado em todos os projetos.</p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="second">
@@ -33,44 +31,35 @@ export const Projects = () => {
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                     <Tab.Pane eventKey="first">
                       <Row>
-                        {
-                          educational.map((project, index) => {
-                            return (
-                              <ProjectCard
-                                key={index}
-                                {...project}
-                                />
-                            )
-                          })
-                        }
+                        {educational.map((project, index) => {
+                          return (
+                            <ProjectCard
+                              key={index}
+                              {...project} />
+                          );
+                        })}
                       </Row>
                     </Tab.Pane>
                     <Tab.Pane eventKey="second">
-                    <Row>
-                        {
-                          professional.map((project, index) => {
-                            return (
-                              <ProjectCard
-                                key={index}
-                                {...project}
-                                />
-                            )
-                          })
-                        }
+                      <Row>
+                        {professional.map((project, index) => {
+                          return (
+                            <ProjectCard
+                              key={index}
+                              {...project} />
+                          );
+                        })}
                       </Row>
                     </Tab.Pane>
                     <Tab.Pane eventKey="third">
-                    <Row>
-                        {
-                          prototypes.map((project, index) => {
-                            return (
-                              <ProjectCard
-                                key={index}
-                                {...project}
-                                />
-                            )
-                          })
-                        }
+                      <Row>
+                        {prototypes.map((project, index) => {
+                          return (
+                            <ProjectCard
+                              key={index}
+                              {...project} />
+                          );
+                        })}
                       </Row>
                     </Tab.Pane>
                   </Tab.Content>
@@ -82,5 +71,5 @@ export const Projects = () => {
       </Container>
       <img className="background-image-right" src={colorSharp2} alt="Background"></img>
     </section>
-  )
+  );
 }
