@@ -35,7 +35,7 @@ export const Projects = () => {
                     <Tab.Pane eventKey="first">
                       <Row>
                         {
-                          professional.map((project, index) => {
+                          educational.map((project, index) => {
                             return (
                               <ProjectCard
                                 key={index}
@@ -49,7 +49,7 @@ export const Projects = () => {
                     <Tab.Pane eventKey="second">
                     <Row>
                         {
-                          educational.map((project, index) => {
+                          professional.map((project, index) => {
                             return (
                               <ProjectCard
                                 key={index}

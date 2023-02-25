@@ -1,37 +1,41 @@
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
+import danteAlighieri from "../assets/img/instituto-dante-alighieri-banner.png";
+import brasilOrante from "../assets/img/brasil-orante-banner.png";
+import sbcLab from "../assets/img/sbc-lab-banner.png";
+import rodaLiteraria from "../assets/img/roda-literaria-banner.png";
+import brincadeiraDeCrianca from "../assets/img/brincadeira-de-crianca-banner.png";
+import sbcProducoes from "../assets/img/sbc-producoes-banner.png";
+
 
 const professionalProjects = [
   {
-    title: "Business Startup",
-    description: "Design & Development",
-    imgUrl: projImg1,
+    title: "Instituto Dante Alighieri",
+    description: "Design & Desenvolvimento",
+    imgUrl: danteAlighieri,
   },
   {
-    title: "Business Startup",
-    description: "Design & Development",
-    imgUrl: projImg2,
+    title: "Brasil Orante",
+    description: "Design & Desenvolvimento",
+    imgUrl: brasilOrante,
   },
   {
-    title: "Business Startup",
-    description: "Design & Development",
-    imgUrl: projImg3,
+    title: "SBC Lab",
+    description: "Design & Desenvolvimento",
+    imgUrl: sbcLab,
   },
   {
-    title: "Business Startup",
-    description: "Design & Development",
-    imgUrl: projImg1,
+    title: "Roda Literária",
+    description: "Design & Desenvolvimento",
+    imgUrl: rodaLiteraria,
   },
   {
-    title: "Business Startup",
-    description: "Design & Development",
-    imgUrl: projImg2,
+    title: "Brincadeira de Criança",
+    description: "Design & Desenvolvimento",
+    imgUrl: brincadeiraDeCrianca,
   },
   {
-    title: "Business Startup",
-    description: "Design & Development",
-    imgUrl: projImg3,
+    title: "SBC Produções",
+    description: "Design & Desenvolvimento",
+    imgUrl: sbcProducoes,
   },
 ];
 
