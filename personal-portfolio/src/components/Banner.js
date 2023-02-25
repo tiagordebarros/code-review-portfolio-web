@@ -30,7 +30,7 @@ export const Banner = () => {
         
         if (!isDeleting && updatedText === fullText) {
           setIsDeleting(true);
-          setIndex(prevIndex => prevIndex - 1);
+          setIndex(prevIndex => prevIndex - index);
           setDelta(period);
         } else if (isDeleting && updatedText === '') {
           setIsDeleting(false);
@@ -38,13 +38,13 @@ export const Banner = () => {
           setIndex(1);
           setDelta(500);
         } else {
-          setIndex(prevIndex => prevIndex + 1);
+          setIndex(prevIndex => prevIndex + index);
         }
       }
       tick();
     }, delta);
     return () => { clearInterval(ticker) };
-  }, [delta, isDeleting, loopNum, text, memoizedValue])
+  }, [index, delta, isDeleting, loopNum, text, memoizedValue])
   
 
   return (
