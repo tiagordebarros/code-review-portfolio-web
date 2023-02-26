@@ -1,37 +1,35 @@
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
+import githubRepository from "../assets/img/github-repository-banner.png";
 
 const educationalProjects = [
   {
-    title: "Business Startup",
+    title: "Lessons Learned",
     description: "Design & Development",
-    imgUrl: projImg1,
+    imgUrl: githubRepository,
   },
   {
-    title: "Business Startup",
+    title: "Playground Functions",
     description: "Design & Development",
-    imgUrl: projImg2,
+    imgUrl: githubRepository,
   },
   {
-    title: "Business Startup",
+    title: "Arte com Pixels",
     description: "Design & Development",
-    imgUrl: projImg3,
+    imgUrl: githubRepository,
   },
   {
-    title: "Business Startup",
+    title: "Trybewarts",
     description: "Design & Development",
-    imgUrl: projImg1,
+    imgUrl: githubRepository,
   },
   {
-    title: "Business Startup",
+    title: "JavaScript Teste Unitários",
     description: "Design & Development",
-    imgUrl: projImg2,
+    imgUrl: githubRepository,
   },
   {
-    title: "Business Startup",
+    title: "Zoo Functions",
     description: "Design & Development",
-    imgUrl: projImg3,
+    imgUrl: githubRepository,
   },
 ];
 
