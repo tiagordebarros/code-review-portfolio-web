@@ -1,3 +1,11 @@
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faReact,
+  faBootstrap,
+  faNodeJs,
+  faWordpress,
+} from "@fortawesome/free-brands-svg-icons";
+
 import danteAlighieri from "../assets/img/instituto-dante-alighieri-banner.png";
 import brasilOrante from "../assets/img/brasil-orante-banner.png";
 import sbcLab from "../assets/img/sbc-lab-banner.png";
@@ -11,16 +19,22 @@ const professionalProjects = [
     title: "Instituto Dante Alighieri",
     description: "Design & Desenvolvimento",
     imgUrl: danteAlighieri,
+    siteUrl: "https://institutodantealighieri.com.br/",
+    stacks: [
+      faReact, faBootstrap, faNodeJs, faWordpress
+    ],
   },
   {
     title: "Brasil Orante",
     description: "Design & Desenvolvimento",
     imgUrl: brasilOrante,
+    siteUrl: "https://brasilorante.com/",
   },
   {
     title: "SBC Lab",
     description: "Design & Desenvolvimento",
     imgUrl: sbcLab,
+    siteUrl: "",
   },
   {
     title: "Roda Literária",
