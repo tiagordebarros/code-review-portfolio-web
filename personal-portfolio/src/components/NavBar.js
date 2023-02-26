@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { HashLink } from 'react-router-hash-link';
-import { BrowserRouter as Router } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHouse, faDice, faRocket } from "@fortawesome/free-solid-svg-icons";
 
@@ -33,7 +32,6 @@ export function NavBar() {
   };
 
   return (
-    <Router>
       <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
         <Container>
           <Navbar.Brand href="/">
@@ -61,6 +59,5 @@ export function NavBar() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-    </Router>
   );
 }
