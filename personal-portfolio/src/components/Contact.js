@@ -4,6 +4,7 @@ import emailjs from '@emailjs/browser';
 import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import TrackVisibility from 'react-on-screen';
+import Reaptcha from 'reaptcha';
 
 import contactImg from "../assets/img/contact-img.svg";
 
@@ -12,6 +13,9 @@ export function Contact() {
   const [buttonText, setButtonText] = useState('Enviar');
   const [status, setStatus] = useState(false);
   const [message, setMmssage] = useState('');
+  const [captcha, setCaptcha] = useState(null);
+
+  const  onVerify = (recaptchaResponse) => console.log(recaptchaResponse);
   
   const sendEmail = (e) => {
     e.preventDefault();
@@ -58,7 +62,13 @@ export function Contact() {
                     </Col>
                     <Col size={12} className="px-1">
                       <textarea rows="6" name="message" placeholder="Mensagem"></textarea>
-                      <button type="submit" value="Send"><span>{buttonText}</span></button>
+                      <Reaptcha
+                        ref={ (e) => setCaptcha(e) }
+                        sitekey="6Lc3zbskAAAAABxWOyiQ1HoWGdmi3zDvQmtJ0uXk"
+                        onVerify={onVerify}
+                        size="invisible"
+                      />
+                      <button onClick={ () => captcha.execute() } type="submit" value="Send"><span>{buttonText}</span></button>
                     </Col>
                   </Row>
                 </form>
