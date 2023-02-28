@@ -5,17 +5,18 @@ import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import TrackVisibility from 'react-on-screen';
 import Reaptcha from 'reaptcha';
+import { Alert } from 'react-bootstrap';
 
 import contactImg from "../assets/img/contact-img.svg";
 
 export function Contact() {
   const form = useRef();
   const [buttonText, setButtonText] = useState('Enviar');
-  const [status, setStatus] = useState(false);
-  const [message, setMmssage] = useState('');
+  const [result, setResult] = useState(false);
+  const [error, setError] = useState(false);
   const [captcha, setCaptcha] = useState(null);
 
-  const  onVerify = (recaptchaResponse) => console.log(recaptchaResponse);
+  const onVerify = (recaptchaResponse) => console.log(recaptchaResponse);
   
   const sendEmail = (e) => {
     e.preventDefault();
@@ -23,12 +24,10 @@ export function Contact() {
     emailjs.sendForm('service_tfs5n89', 'template_dnb3yjh', form.current, 'sq1WyKkddrDs7AcKd')
       .then((result) => {
           console.log(result.text);
-          setStatus(true);
-          setMmssage(result.text);
+          setResult(true);
       }, (error) => {
           console.log(error.text);
-          setStatus(false);
-          setMmssage(error.text);
+          setError(true);
       });
     setButtonText("Enviar");
   };
@@ -73,7 +72,21 @@ export function Contact() {
                   </Row>
                 </form>
                     <br></br>
-                      <p className={status ? 'success' : "danger"}>{message}</p>
+                    {result && 
+                      <Alert variant="success" onClose={() => setResult(false)} dismissible>
+                      <Alert.Heading>Sucesso!</Alert.Heading>
+                      <p>
+                        Mensagem enviada com sucesso!
+                      </p>
+                    </Alert> }
+                    { error &&
+                      <Alert variant="danger" onClose={() => setError(false)} dismissible>
+                      <Alert.Heading>Erro!</Alert.Heading>
+                      <p>
+                        Ocorreu um erro inesperado!
+                      </p>
+                    </Alert>
+                    }
               </div>}
             </TrackVisibility>
           </Col>
