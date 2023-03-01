@@ -33,6 +33,8 @@ export function Contact() {
           setError(true);
       });
     setButtonText("Enviar");
+    form.current.reset();
+    setValidated(false);
   };
 
   const handleSubmit = (event) => {
@@ -68,20 +70,20 @@ export function Contact() {
                     </InputGroup>
                     </Col>
                     <Col size={12} sm={6} className="px-1">
-                    <InputGroup hasValidation1>
+                    <InputGroup hasValidation>
                       <InputGroup.Text id="inputGroupPrepend"><FontAwesomeIcon icon={faSignature} /></InputGroup.Text>
                       <Form.Control type="text" name="lastname" placeholder="Sobrenome" aria-describedby="inputGroupPrepend" />
                     </InputGroup>
                     </Col>
                     <Col size={12} sm={6} className="px-1">
-                    <InputGroup hasValidation2>
+                    <InputGroup hasValidation>
                       <InputGroup.Text id="inputGroupPrepend"><FontAwesomeIcon icon={faEnvelope} /></InputGroup.Text>
                       <Form.Control type="email" name="email" placeholder="E-mail" aria-describedby="inputGroupPrepend" required />
                       <Form.Control.Feedback type="invalid">Por favor, informe o seu e-mail.</Form.Control.Feedback>
                     </InputGroup>
                     </Col>
                     <Col size={12} sm={6} className="px-1">
-                    <InputGroup hasValidation3>
+                    <InputGroup hasValidation>
                       <InputGroup.Text id="inputGroupPrepend"><FontAwesomeIcon icon={faPhone} /></InputGroup.Text>
                       <Form.Control type="tel" name="telephone" placeholder="Telefone" aria-describedby="inputGroupPrepend" />
                     </InputGroup>
