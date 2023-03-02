@@ -587,30 +587,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: flex;
   align-items: center;
 }
-.new-email-bx::before {
-  /* content: ""; */
-  /* background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%); */
-  /* background: linear-gradient(90.21deg, #092327 -5.91%, #315b5b 111.58%); */
-  /* background: linear-gradient(90.21deg, #072333 -5.91%, #153241 111.58%);
-  border-radius: 20px;
-  position: absolute;
-  z-index: -1;
-  top: -1px;
-  left: -1px;
-  bottom: -1px;
-  right: -1px; */
-}
-.new-email-bx::after {
-  /* content: "";
-  background: #fff;
-  border-radius: 20px;
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0; */
-}
 .new-email-bx input {
   width: 100%;
   /* color: #121212; */
