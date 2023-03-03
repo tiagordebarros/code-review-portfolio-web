@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Form, Button, Col, Row, Alert } from "react-bootstrap";
+import axios from "axios";
 
 export function Newsletter({ status, message, onValidated }) {
   const [email, setEmail] = useState('');
@@ -11,11 +12,14 @@ export function Newsletter({ status, message, onValidated }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    email &&
-      email.indexOf("@") > -1 &&
-      onValidated({
-        EMAIL: email
-      });
+    // email &&
+    //   email.indexOf("@") > -1 &&
+    //   onValidated({
+    //     EMAIL: email
+    //   });
+      axios.post("http://localhost:5000/subscribe/", { email: email })
+      .then((response) => response.data)
+      .catch((error) => console.log(error));
   };
 
   const clearFields = () => {
