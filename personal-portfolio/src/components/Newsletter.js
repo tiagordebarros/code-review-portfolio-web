@@ -1,29 +1,38 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Form, Button, Col, Row, Alert } from "react-bootstrap";
 import axios from "axios";
 
-export function Newsletter({ status, message, onValidated }) {
+export function Newsletter() {
   const [email, setEmail] = useState('');
+  const [sending, setSending] = useState(false);
+  const [error, setError] = useState(false);
+  const [success, setSuccess] = useState(false);
+  const [message, setMessage] = useState('');
 
-  useEffect(() => {
-    if (status === 'success')
-      clearFields();
-  }, [status]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // email &&
-    //   email.indexOf("@") > -1 &&
-    //   onValidated({
-    //     EMAIL: email
-    //   });
+    setSending(true);
       axios.post("http://localhost:5000/subscribe/", { email: email })
-      .then((response) => response.data)
-      .catch((error) => console.log(error));
-  };
-
-  const clearFields = () => {
-    setEmail('');
+      .then((response) => {
+        setSending(false);
+        setSuccess(true);
+        setMessage(response.statusText);
+        setTimeout(() => {
+          setSuccess(false);
+        }, 5000);
+        return response.data;
+      })
+      .catch((error) => {
+        setSending(false);
+        setError(true);
+        setMessage(error.message);
+        console.log(error.message);
+        setTimeout(() => {
+          setError(false);
+        }, 5000);
+        throw new Error(error.message);
+      });
   };
 
   return (
@@ -32,9 +41,9 @@ export function Newsletter({ status, message, onValidated }) {
         <Row>
           <Col lg={6} md={6} xl={5}>
             <h3>Assine nossa Newsletter.<br></br>Não enviamos spam.</h3>
-            {status === 'sending' && <Alert>Enviando...</Alert>}
-            {status === 'error' && <Alert variant="danger">{message}</Alert>}
-            {status === 'success' && <Alert variant="success">{message}</Alert>}
+            { sending && <Alert>Enviando...</Alert>}
+            { error && <Alert variant="danger">{message}</Alert> }
+            { success && <Alert variant="success">{message}</Alert>}
           </Col>
           <Col md={6} xl={7}>
             <Form onSubmit={handleSubmit}>

@@ -76,3 +76,8 @@ router.post("/contact", (req, res) => {
     }
   });
 });
+
+app.use((err, _req, res, _next) => {
+  console.error(err.stack);
+  res.status(500).send('Ocorreu um erro na sua aplicação.');
+});
