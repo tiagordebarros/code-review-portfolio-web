@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Form, Button, Col, Row, Alert } from "react-bootstrap";
+import Reaptcha from 'reaptcha';
 import axios from "axios";
 
 export function Newsletter() {
@@ -8,7 +9,9 @@ export function Newsletter() {
   const [error, setError] = useState(false);
   const [success, setSuccess] = useState(false);
   const [message, setMessage] = useState('');
+  const [captcha, setCaptcha] = useState(null);
 
+  const onVerify = (recaptchaResponse) => console.log(recaptchaResponse);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -52,7 +55,13 @@ export function Newsletter() {
                 <Form.Control value={email} type="email" onChange={(e) => setEmail(e.target.value)} placeholder="Endereço de e-mail" />
                 </Col>
                 <Col sm={4}>
-                <Button type="submit">Assinar</Button>
+                <Reaptcha
+                  ref={ (e) => setCaptcha(e) }
+                  sitekey="6Lc3zbskAAAAABxWOyiQ1HoWGdmi3zDvQmtJ0uXk"
+                  onVerify={onVerify}
+                  size="invisible"
+                />
+                <Button onClick={ () => captcha.execute() } type="submit">Assinar</Button>
                 </Col>
               </Row>
             </Form>
