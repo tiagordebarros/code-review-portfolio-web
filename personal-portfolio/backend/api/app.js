@@ -1,15 +1,15 @@
 require("dotenv").config();
 
 const express = require("express");
+
+const app = express();
 const router = express.Router();
 const cors = require("cors");
-const app = express();
 const sibApi = require("sib-api-v3-sdk");
 
 app.use(cors());
 app.use(express.json());
 app.use("/", router);
-app.listen(5000, () => console.log("Servidor inicializado com sucesso!"));
 
 app.post("/subscribe", (req, res) => {
   const { email } = req.body;
@@ -39,3 +39,5 @@ app.use((err, _req, res, _next) => {
   console.error(err.stack);
   res.status(500).send('Ocorreu um erro na sua aplicação.');
 });
+
+module.exports = app;
