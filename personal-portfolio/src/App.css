@@ -261,7 +261,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding: 8px 10px;
   background: linear-gradient(90.21deg, #092327 -5.91%, #315b5b 111.58%);
   border: 1px solid rgba(255, 255, 255, 0.5);
-  /* background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%); */
   background: linear-gradient(90.21deg, #072333 -5.91%, #153241 111.58%);
   font-size: 20px;
   margin-bottom: 16px;
@@ -381,7 +380,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .project .nav.nav-pills {
   width: 72%;
   margin: 0 auto;
-  /* border-radius: 50px; */
   border-radius: 64px;
   background-color: rgb(255 255 255 / 10%);
   overflow: hidden;
@@ -409,8 +407,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     width: 0;
     height: 100%;
     background: linear-gradient(90.21deg, #072333 -5.91%, #153241 111.58%);
-    /* background: linear-gradient(90.21deg, #092327 -5.91%, #315b5b 111.58%); */
-    /* background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%); */
     top: 0;
     left: 0;
     z-index: -1;
@@ -424,7 +420,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .nav-link#projects-tabs-tab-first {
   border: 1px solid rgba(255, 255, 255, 0.5);
-  /* border-radius: 55px 0px 0px 55px; */
   border-radius: 64px 0px 0px 64px;
 }
 .nav-link#projects-tabs-tab-second {
@@ -433,20 +428,15 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .nav-link#projects-tabs-tab-third {
   border: 1px solid rgba(255, 255, 255, 0.5);
-  /* border-radius: 0 55px 55px 0; */
   border-radius: 0 64px 64px 0;
 }
 .proj-imgbx {
   position: relative;
-  /* border-radius: 30px; */
-  /* border-radius: 64px; */
   overflow: hidden;
   margin-bottom: 24px;
 }
 .proj-imgbx::before {
   content: "";
-  /* background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%); */
-  /* background: linear-gradient(90.21deg, #092327 -5.91%, #315b5b 111.58%); */
   background: linear-gradient(90.21deg, #072333 -5.91%, #153241 111.58%);
   opacity: 0.85;
   position: absolute;
@@ -494,8 +484,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Contact Css ************/
 .contact {
-  /* background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%); */
-  /* background: linear-gradient(90.21deg, #092327 -5.91%, #315b5b 111.58%); */
   background: linear-gradient(90.21deg, #072333 -5.91%, #153241 111.58%);
   padding: 60px 0 200px 0;
 }
@@ -511,7 +499,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 100%;
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.5);
-  /* border-radius: 20px; */
   border-radius: 64px;
   color: #fff;
   margin: 0 0 8px 0;
@@ -541,7 +528,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding: 14px 48px;
   font-size: 18px;
   margin-top: 25px;
-  /* border-radius: 0; */
   position: relative;
   transition: 0.3s ease-in-out;
 }
@@ -572,7 +558,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .contact form input, .contact form textarea {
-  /* border-radius: 10px; */
   border-radius: 0px;
 }
 
@@ -586,10 +571,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .newsletter-bx {
   background: #FFFFFF;
-  /* border-radius: 55px; */
   border-radius: 64px;
   color: #121212;
-  /* padding: 85px 125px; */
   padding: 4rem;
   margin-bottom: 80px;
   margin-top: -122px;
@@ -601,34 +584,22 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .new-email-bx {
   background: #fff;
-  /* background: linear-gradient(90.21deg, #072333 -5.91%, #153241 111.58%); */
-  /* padding: 2rem; */
-  /* border: solid 1px #121212; */
-  /* border-radius: 20px; */
   border-radius: 64px;
-  /* position: relative; */
   z-index: 0;
   display: flex;
   align-items: center;
 }
 .new-email-bx input {
   width: 100%;
-  /* color: #121212; */
   font-weight: 500;
-  /* background: transparent; */
-  /* border: 0; */
   padding: 15px;
 }
 .new-email-bx button {
-  /* background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%); */
-  /* background: linear-gradient(90.21deg, #092327 -5.91%, #315b5b 111.58%); */
   background: linear-gradient(90.21deg, #072333 -5.91%, #153241 111.58%);
-  /* padding: 20px 65px; */
   color: #fff;
   font-weight: 500;
   letter-spacing: 0.5px;
   padding: 15px;
-  /* border-radius: 18px; */
 }
 .footer img {
   width: 26%;
