@@ -3,7 +3,7 @@ import { Form, Button, Col, Row, Alert } from "react-bootstrap";
 import Reaptcha from "reaptcha";
 import axios from "axios";
 
-import { PROTOCOL, DOMAIN, PORT, TIMEOUT } from '../constants/constants';
+import { PROTOCOL, DOMAIN, PORT, TIMEOUT } from '../../constants/constants';
 
 export function Newsletter() {
   const form = useRef();

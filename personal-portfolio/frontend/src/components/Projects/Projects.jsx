@@ -2,9 +2,10 @@ import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 
+import './Projects.css'
 import { ProjectCard } from "./ProjectCard";
-import { professional, educational, prototypes } from "../projects";
-import colorSharp2 from "../assets/img/color-sharp2.png";
+import { professional, educational, prototypes } from "../../projects";
+import colorSharp2 from "../../assets/img/color-sharp2.png";
 
 export function Projects() {
   return (

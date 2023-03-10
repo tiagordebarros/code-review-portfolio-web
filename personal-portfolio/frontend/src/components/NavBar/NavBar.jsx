@@ -4,10 +4,11 @@ import { HashLink } from 'react-router-hash-link';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHouse, faDice, faRocket } from "@fortawesome/free-solid-svg-icons";
 
-import logo from '../assets/img/logo.png';
-import navIcon1 from '../assets/img/nav-icon1.svg';
-import navIcon3 from '../assets/img/nav-icon3.svg';
-import navIcon4 from '../assets/img/nav-icon4.svg';
+import './NavBar.css';
+import logo from '../../assets/img/logo.png';
+import navIcon1 from '../../assets/img/nav-icon1.svg';
+import navIcon3 from '../../assets/img/nav-icon3.svg';
+import navIcon4 from '../../assets/img/nav-icon4.svg';
 
 export function NavBar() {
   const [activeLink, setActiveLink] = useState('home');

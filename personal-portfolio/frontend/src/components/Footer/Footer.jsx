@@ -1,17 +1,18 @@
 import { Container, Row, Col } from "react-bootstrap";
-import { MailchimpForm } from "./MailchimpForm";
+import { Newsletter } from './Newsletter';
 
-import logo from "../assets/img/logo.png";
-import navIcon1 from "../assets/img/nav-icon1.svg";
-import navIcon3 from "../assets/img/nav-icon3.svg";
-import navIcon4 from "../assets/img/nav-icon4.svg";
+import './Footer.css';
+import logo from "../../assets/img/logo.png";
+import navIcon1 from "../../assets/img/nav-icon1.svg";
+import navIcon3 from "../../assets/img/nav-icon3.svg";
+import navIcon4 from "../../assets/img/nav-icon4.svg";
 
 export function Footer() {
   return (
     <footer className="footer">
       <Container>
         <Row className="align-items-center">
-          <MailchimpForm />
+          <Newsletter />
           <Col size={12} sm={6}>
             <img src={logo} alt="Logo" />
           </Col>

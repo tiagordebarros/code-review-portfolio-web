@@ -1,26 +1,27 @@
 import 'react-multi-carousel/lib/styles.css';
 import Carousel from 'react-multi-carousel';
 
-import mongodb from "../assets/img/mongodb.svg";
-import nodejs from "../assets/img/nodejs.svg";
-import react from "../assets/img/react.svg";
-import wordpress from "../assets/img/wordpress.svg";
-import figma from "../assets/img/figma.svg";
-import mysql from "../assets/img/mysql.svg";
-import typescript from "../assets/img/typescript.svg";
-import html from "../assets/img/html.svg";
-import css from "../assets/img/css.svg";
-import javascript from "../assets/img/javascript.svg";
-import redux from "../assets/img/redux.svg";
-import bootstrap from "../assets/img/bootstrap.svg";
-import python from "../assets/img/python.svg";
-import docker from "../assets/img/docker.svg";
-import git from "../assets/img/git.svg";
-import github from "../assets/img/github.svg";
-import npm from "../assets/img/npm.svg";
-import vscode from "../assets/img/vscode.svg";
-import jwt from "../assets/img/jwt.svg";
-import colorSharp from "../assets/img/color-sharp.png"
+import './Skills.css'
+import mongodb from "../../assets/img/mongodb.svg";
+import nodejs from "../../assets/img/nodejs.svg";
+import react from "../../assets/img/react.svg";
+import wordpress from "../../assets/img/wordpress.svg";
+import figma from "../../assets/img/figma.svg";
+import mysql from "../../assets/img/mysql.svg";
+import typescript from "../../assets/img/typescript.svg";
+import html from "../../assets/img/html.svg";
+import css from "../../assets/img/css.svg";
+import javascript from "../../assets/img/javascript.svg";
+import redux from "../../assets/img/redux.svg";
+import bootstrap from "../../assets/img/bootstrap.svg";
+import python from "../../assets/img/python.svg";
+import docker from "../../assets/img/docker.svg";
+import git from "../../assets/img/git.svg";
+import github from "../../assets/img/github.svg";
+import npm from "../../assets/img/npm.svg";
+import vscode from "../../assets/img/vscode.svg";
+import jwt from "../../assets/img/jwt.svg";
+import colorSharp from "../../assets/img/color-sharp.png"
 
 export function Skills() {
     const responsive = {

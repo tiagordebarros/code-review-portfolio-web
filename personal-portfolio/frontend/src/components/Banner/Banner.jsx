@@ -4,8 +4,9 @@ import { Container, Row, Col } from "react-bootstrap";
 import { Download } from 'react-bootstrap-icons';
 import TrackVisibility from 'react-on-screen';
 
-import headerImg from "../assets/img/header-img.png";
-import { downloadLocalFile } from '../helpers/downloadLocalFile';
+import './Banner.css';
+import headerImg from "../../assets/img/header-img.png";
+import { downloadLocalFile } from '../../helpers/downloadLocalFile';
 
 export function Banner() {
   const [loopNum, setLoopNum] = useState(0);
