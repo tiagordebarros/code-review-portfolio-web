@@ -3,6 +3,8 @@ import { Form, Button, Col, Row, Alert } from "react-bootstrap";
 import Reaptcha from "reaptcha";
 import axios from "axios";
 
+import { PROTOCOL, DOMAIN, PORT, TIMEOUT } from '../constants/constants';
+
 export function Newsletter() {
   const form = useRef();
   const [email, setEmail] = useState("");
@@ -26,14 +28,14 @@ export function Newsletter() {
     } else {
       captcha.execute();
       axios
-        .post("http://localhost:5000/subscribe/", { email: email })
+        .post(`${PROTOCOL}://${DOMAIN}:${PORT}/subscribe/`, { email: email })
         .then((response) => {
           setSending(false);
           setSuccess(true);
           setMessage(response.statusText);
           setTimeout(() => {
             setSuccess(false);
-          }, 5000);
+          }, TIMEOUT);
           return response.data;
         })
         .catch((error) => {
