@@ -1,0 +1,44 @@
+# Spacefile Docs: https://go.deta.dev/docs/spacefile/v0
+v: 0
+icon: frontend/public/logo512.png
+app_name: Code Review
+micros:
+  - name: backend
+    src: backend
+    engine: nodejs16
+    commands:
+      - npm start
+    run: "node api/server.js"
+    path: backend
+    presets:
+      env:
+        - name: SIB_API_KEY
+        - description: Sendinblue API key
+        - default: "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"
+        - name: PORT
+        - description: Backend port
+        - default: 5000
+    primary: true
+  - name: frontend
+    src: frontend
+    engine: react
+    commands:
+      - npm run build
+    path: frontend
+    presets:
+      env:
+        - name: REACT_APP_PROTOCOL
+        - description: The react app protocol
+        - default: "https"
+        - name: REACT_APP_DOMAIN
+        - description: The react app domain
+        - default: "localhost"
+        - name: REACT_APP_PORT
+        - description: The react app port
+        - default: 5000
+        - name: REACT_APP_TIMEOUT
+        - description: Timeout
+        - default: 5000
+    public_routes:
+      - "/*"
+    primary: false
