@@ -1,28 +1,21 @@
-import {
-  faReact,
-  faBootstrap,
-  faNodeJs,
-  faWordpress,
-  faHtml5,
-  faCss3
-} from "@fortawesome/free-brands-svg-icons";
+import { faWordpress } from "@fortawesome/free-brands-svg-icons";
 
 import danteAlighieri from "../assets/img/instituto-dante-alighieri-banner.png";
 import brasilOrante from "../assets/img/brasil-orante-banner.png";
 import sbcLab from "../assets/img/sbc-lab-banner.png";
 import rodaLiteraria from "../assets/img/roda-literaria-banner.png";
-import brincadeiraDeCrianca from "../assets/img/brincadeira-de-crianca-banner.png";
+import rodasocial from "../assets/img/roda-social-banner.png";
 import sbcProducoes from "../assets/img/sbc-producoes-banner.png";
 
 const professionalProjects = [
   {
-    title: "Instituto Dante Alighieri",
+    title: "Inst. Dante Alighieri",
     description: "Design & Desenvolvimento",
     imgUrl: danteAlighieri,
     siteUrl: "https://institutodantealighieri.com.br/",
     githubUrl: "",
     figmaUrl: "",
-    stacks: [faReact, faBootstrap, faNodeJs, faWordpress],
+    stacks: [faWordpress],
   },
   {
     title: "Brasil Orante",
@@ -52,13 +45,13 @@ const professionalProjects = [
     stacks: [faWordpress],
   },
   {
-    title: "Brincadeira de Criança",
+    title: "Roda Social",
     description: "Design & Desenvolvimento",
-    imgUrl: brincadeiraDeCrianca,
+    imgUrl: rodasocial,
     siteUrl: "",
     githubUrl: "",
     figmaUrl: "",
-    stacks: [faHtml5, faCss3],
+    stacks: [faWordpress],
   },
   {
     title: "SBC Produções",
