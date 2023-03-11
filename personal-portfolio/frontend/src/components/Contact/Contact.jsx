@@ -5,7 +5,7 @@ import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import TrackVisibility from "react-on-screen";
 import Reaptcha from "reaptcha";
-import { Alert, Form, Button, InputGroup } from "react-bootstrap";
+import { Alert, Form, InputGroup } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faUser,
@@ -169,13 +169,13 @@ export function Contact() {
                           onVerify={onVerify}
                           size="invisible"
                         />
-                        <Button
+                        <button
                           onClick={() => captcha.execute()}
                           type="submit"
                           value="Send"
                         >
                           <span>{buttonText}</span>
-                        </Button>
+                        </button>
                       </Col>
                     </Row>
                   </Form>

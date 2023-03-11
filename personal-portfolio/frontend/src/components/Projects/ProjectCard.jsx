@@ -3,7 +3,15 @@ import { Link45deg, Github } from "react-bootstrap-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { CgFigma } from "react-icons/cg";
 
-export function ProjectCard({ title, _description, imgUrl, siteUrl, githubUrl, figmaUrl, stacks }) {
+export function ProjectCard({
+  title,
+  _description,
+  imgUrl,
+  siteUrl,
+  githubUrl,
+  figmaUrl,
+  stacks,
+}) {
   return (
     <Col size={12} sm={6} md={4}>
       <div className="proj-imgbx">
@@ -15,10 +23,10 @@ export function ProjectCard({ title, _description, imgUrl, siteUrl, githubUrl, f
               {siteUrl && <Link45deg size={40} />}
             </button>
             <button onClick={() => window.open(githubUrl, "_blank")}>
-              { githubUrl && <Github size={30} /> }
+              {githubUrl && <Github size={30} />}
             </button>
             <button onClick={() => window.open(figmaUrl, "_blank")}>
-              { figmaUrl && <CgFigma fontSize={30} /> }
+              {figmaUrl && <CgFigma fontSize={30} />}
             </button>
           </div>
           <div>
