@@ -32,6 +32,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "prebuild": "rm -rf ./build && echo Build desatualizada removida.",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

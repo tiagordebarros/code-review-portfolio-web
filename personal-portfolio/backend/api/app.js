@@ -37,7 +37,7 @@ app.post("/subscribe", (req, res) => {
 
 app.use((err, _req, res, _next) => {
   console.error(err.stack);
-  res.status(500).send('Ocorreu um erro na sua aplicação.');
+  res.status(500).json({ message: "Ocorreu um erro na sua aplicação."});
 });
 
 module.exports = app;
