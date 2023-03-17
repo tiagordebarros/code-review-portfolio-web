@@ -28,7 +28,6 @@ export function Newsletter() {
     } else {
       captcha.execute();
       axios
-        // .post(`${PROTOCOL}://${DOMAIN}:${PORT}/subscribe/`, { email: email })
         .post(`${PROTOCOL}://${DOMAIN}/api/subscribe/`, { email: email })
         .then((response) => {
           setSending(false);
