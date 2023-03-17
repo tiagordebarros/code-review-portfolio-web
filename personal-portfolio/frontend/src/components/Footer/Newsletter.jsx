@@ -3,7 +3,7 @@ import { Form, Button, Col, Row, Alert } from "react-bootstrap";
 import Reaptcha from "reaptcha";
 import axios from "axios";
 
-import { PROTOCOL, DOMAIN, TIMEOUT } from "../../constants/constants";
+import { PROTOCOL, DOMAIN, TIMEOUT, REAPTCHA } from "../../constants/constants";
 
 export function Newsletter() {
   const form = useRef();
@@ -87,7 +87,7 @@ export function Newsletter() {
                 <Col sm={4}>
                   <Reaptcha
                     ref={(e) => setCaptcha(e)}
-                    sitekey="6Lc3zbskAAAAABxWOyiQ1HoWGdmi3zDvQmtJ0uXk"
+                    sitekey={REAPTCHA}
                     onVerify={onVerify}
                     size="invisible"
                   />

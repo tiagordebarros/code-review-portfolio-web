@@ -16,6 +16,7 @@ import {
 
 import "./Contact.css";
 import contactImg from "../../assets/img/contact-img.svg";
+import { REAPTCHA } from "../../constants/constants";
 
 export function Contact() {
   const form = useRef();
@@ -39,11 +40,11 @@ export function Contact() {
       )
       .then(
         (result) => {
-          console.log(result.text);
+          console.info(result.text);
           setResult(true);
         },
         (error) => {
-          console.log(error.text);
+          console.error(error.text);
           setError(true);
         }
       );
@@ -165,7 +166,7 @@ export function Contact() {
                         />
                         <Reaptcha
                           ref={(e) => setCaptcha(e)}
-                          sitekey="6Lc3zbskAAAAABxWOyiQ1HoWGdmi3zDvQmtJ0uXk"
+                          sitekey={REAPTCHA}
                           onVerify={onVerify}
                           size="invisible"
                         />
