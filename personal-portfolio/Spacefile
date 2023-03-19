@@ -4,7 +4,7 @@ icon: frontend/public/logo512.png
 app_name: Code Review
 micros:
   - name: backend
-    src: ./backend
+    src: backend
     path: api
     engine: nodejs16
     public_routes:
@@ -13,7 +13,7 @@ micros:
     run: "node api/server.js"
 
   - name: frontend
-    src: ./frontend
+    src: frontend
     engine: react
     public_routes:
       - "/*"

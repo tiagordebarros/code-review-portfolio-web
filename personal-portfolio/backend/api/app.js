@@ -35,9 +35,13 @@ app.post("/subscribe", (req, res) => {
   );
 });
 
+app.get("/hello", (_req, res) => {
+  return res.status(200).json({ message: "Hello from Space!" });
+});
+
 app.use((err, _req, res, _next) => {
   console.error(err.stack);
-  res.status(500).json({ message: "Ocorreu um erro na sua aplicação."});
+  res.status(500).json({ message: "Ocorreu um erro na sua aplicação." });
 });
 
 module.exports = app;

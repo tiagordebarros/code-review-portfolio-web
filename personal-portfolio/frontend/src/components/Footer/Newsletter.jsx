@@ -42,7 +42,7 @@ export function Newsletter() {
           setSending(false);
           setError(true);
           setMessage(error.message);
-          console.log(error.message);
+          console.error(error.message);
           setTimeout(() => {
             setError(false);
           }, 5000);
