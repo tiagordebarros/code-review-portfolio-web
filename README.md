@@ -1,19 +1,19 @@
 
 <p align="center">
 
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/tiagordebarros/web-dev-projects?color=%2304D361">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/tiagordebarros/code-review-portfolio-web?color=%2304D361">
 
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/tiagordebarros/web-dev-projects">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/tiagordebarros/code-review-portfolio-web">
   
-  <a href="https://github.com/tiagordebarros/web-dev-projects/commits/master">
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/tiagordebarros/web-dev-projects">
+  <a href="https://github.com/tiagordebarros/code-review-portfolio-web/commits/main">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/tiagordebarros/code-review-portfolio-web">
   </a>
     
    <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
-   <a href="https://github.com/tiagordebarros/web-dev-projects/stargazers">
+   <a href="https://github.com/tiagordebarros/code-review-portfolio-web/stargazers">
 
-  <a href="https://rocketseat.com.br">
-    <img alt="Feito por Code Review" src="https://img.shields.io/badge/%20by-Code Review-%237519C1">
+  <a href="https://codereview-2-k5416147.deta.app/">
+    <img alt="Made by Code Review" src="https://img.shields.io/badge/%20by-Code Review-%237519C1">
   </a>
 
 </p>
@@ -22,13 +22,13 @@
     <img alt="Code Review" title="#CodeReview" src="frontend/src/assets/img/code-review-banner-readme.png" />
 </h1>
 
-<h4 align="center"> 
-	 Code Review  👨🏻‍💻  Portfolio Web 🚀
-</h4>
+<h2 align="center"> 
+	 Code Review 👨🏻‍💻 Portfolio Web 🚀
+</h2>
 
 <p align="center">
  <a href="#-sobre-o-projeto">Sobre</a> •
- <a href="#-funcionalidades">Funcionalidades</a> •
+ <a href="#%EF%B8%8F-funcionalidades">Funcionalidades</a> •
  <a href="#-layout">Layout</a> • 
  <a href="#-como-executar-o-projeto">Como executar</a> • 
  <a href="#-tecnologias">Tecnologias</a> • 
@@ -38,11 +38,15 @@
 </p>
 
 
+<p align="center">
+<a href="https://codereview-2-k5416147.deta.app/">- 🖥 Ver ao vivo -</a> 
+</p>
+
+---
 
 ## 💻 Sobre o projeto
 
 👨🏻‍💻 Code Review - Portfolio Web - é um PWA desenvolvido para realizar a apresentação de portfólio de projetos pessoais e profissionais.
-<br> 🚀 **[Ver ao vivo](https://codereview-2-k5416147.deta.app/)**
 
 ---
 
@@ -79,8 +83,8 @@ O layout da aplicação para computadores e celulares:
 ## 🚀 Como executar o projeto
 
 Este projeto é divido em duas partes:
-1. Backend
-2. Frontend
+1. Backend (lado do servidor)
+2. Frontend (lado do cliente)
 
 >💡Dica: <br> O "Backend" e o "Frontend" se encontram em diretórios de nome homônimo, na raís do projeto.
 
@@ -88,7 +92,9 @@ Este projeto é divido em duas partes:
 
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
 [Git](https://git-scm.com), [Node.js](https://nodejs.org/en/). 
-Além disso, sugiro que você faça uso de um bom editor de código, como por exemplo o [VSCode](https://code.visualstudio.com/)
+Além disso, sugiro que você faça uso de um bom editor de código, como por exemplo o [VSCode](https://code.visualstudio.com/).
+
+>💡Dica: <br> Se preferir, você pode utilizar a extensão [runme](https://runme.dev/) para executar todos os comandos diretamente do readme.
 
 #### 💻 Rodando a aplicação
 
@@ -102,7 +108,7 @@ $ git clone git@github.com:tiagordebarros/code-review-portfolio-web.git
 $ cd code-review-portfolio-web
 ```
 
->💡Dica: <br> Se preferir, você pode utilizar a extensão [runme](https://runme.dev/) para executar todos os comandos diretamente do readme.
+>⚠️ Atenção: <br> Para ter acesso à ***100% das funcionalidades*** da aplicação, você deverá renomear o arquivo **.env.example** para **.env** e substituir todas as variáveis de ambiente pelas suas variáveis locais. Há um arquivo .env.example no diretório do ***backend*** e outro no do ***frontend***.
 ##### 🌐 Rodando o Servidor(Backend)
 
 3. Vá para o diretório do backend:
@@ -124,16 +130,7 @@ start http://localhost:3001
 ```
 >💡Dica: <br> Você pode utilizar o botão abaixo para conferir quais são as rotas diposníveis no backend e quais são os seus retornos.
 
-<br>
-
-<p align="center">
-
-
-[![Run in Postman](https://run.pstmn.io/button.svg)](https://god.gw.postman.com/run-collection/:collection_id)
-
-</p>
-
-<br>
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://god.gw.postman.com/run-collection/23988041-73942fb6-4235-4d55-8066-7a11c459ce87?action=collection%2Ffork&collection-url=entityId%3D23988041-73942fb6-4235-4d55-8066-7a11c459ce87%26entityType%3Dcollection%26workspaceId%3Db49e0c04-1ac3-49b2-b81a-d81be53af02b)
 
 ##### 🖥 Rodando a aplicação Web (Frontend)
 
@@ -161,7 +158,7 @@ start http://localhost:3000
 
 As seguintes ferramentas foram usadas na construção desse projeto:
 
-#### **Frontend**  ([React](https://reactjs.org/))
+#### **Frontend** ([React](https://reactjs.org/))
 
 -   **[Emailjs](https://www.emailjs.com/)**
 -   **[Font Awesome](https://fontawesome.com/)**
@@ -176,9 +173,9 @@ As seguintes ferramentas foram usadas na construção desse projeto:
 -   **[React Router](https://reactrouter.com/en/main)**
 -   **[reCAPTCHA](https://www.google.com/recaptcha/about/)**
 
-> Para a lista completa, veja o arquivo  [package.json](frontend/package.json)
+> Para a lista completa, veja o arquivo [package.json](frontend/package.json)
 
-#### [](https://github.com/tgmarinho/Ecoleta#server-nodejs--typescript)**Backend**  ([NodeJS](https://nodejs.org/en/))
+#### **Backend** ([NodeJS](https://nodejs.org/en/))
 
 -   **[Express](https://expressjs.com/)**
 -   **[CORS](https://expressjs.com/en/resources/middleware/cors.html)**
@@ -186,20 +183,18 @@ As seguintes ferramentas foram usadas na construção desse projeto:
 -   **[SendinBlue's API v3](https://www.npmjs.com/package/sib-api-v3-sdk)**
 -   **[Nodemon](https://nodemon.io/)**
 
-> Para a lista completa, veja o arquivo  [package.json](backend/package.json)
+> Para a lista completa, veja o arquivo [package.json](backend/package.json)
 
-#### [](https://github.com/tgmarinho/Ecoleta#utilit%C3%A1rios)**Utilitários**
+#### **Utilitários**
 
 -   API: **[SendinBlue's API v3](https://www.npmjs.com/package/sib-api-v3-sdk)** 
-
 -   Editor:  **[Visual Studio Code](https://code.visualstudio.com/)**  → Extensions:  **[PWA Builder](https://www.pwabuilder.com/)**
--   Markdown:  **[StackEdit](https://stackedit.io/)**,  **[Markdown Emoji](https://gist.github.com/rxaviers/7360908)**
+-   Markdown:  **[StackEdit](https://stackedit.io/)**,  **[Editor.md](https://pandao.github.io/editor.md/en.html)**
 -   Commit convention:  **[Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)**
 -   Readme template:  **[README Ecoleta](https://github.com/tgmarinho/README-ecoleta)**
 -   Testes de API:  **[Postman](https://www.postman.com/)**
 -   Ícones:  **[React Icons](https://react-icons.github.io/)**,  **[Font Awesome](https://fontawesome.com/)**
 -   Fontes:  **[CentraNo2](https://sharptype.co/typefaces/centra/centra-no2/)**
-
 
 ---
 
@@ -218,9 +213,9 @@ As seguintes ferramentas foram usadas na construção desse projeto:
 ## 🤝 Como contribuir para o projeto
 
 1. Faça um **fork** do projeto.
-2. Crie uma nova branch com as suas alterações: `git checkout -b feat: my-awesome-feature`
-3. Salve as alterações e crie uma mensagem de commit contando o que você fez: `git commit -m "feat: my new feature"`
-4. Envie as suas alterações: `git push -u origin my-feature`
+2. Crie uma nova branch com as suas alterações: `git checkout -b experimental/no-ref/my-awesome-feature`
+3. Salve as alterações e crie uma mensagem de commit contando o que você fez: `git commit -m "feat: add new awesome feature"`
+4. Envie as suas alterações: `git push -u origin experimental/no-ref/my-awesome-feature`
 
 <br>
 
@@ -232,13 +227,13 @@ As seguintes ferramentas foram usadas na construção desse projeto:
 
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/tiagordebarros"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/90200916?v=4" width="100px;" alt=""/><br /><sub><b>Tiago R. de Barros</b></sub></a><br />
+    <td align="center"><a href="https://github.com/tiagordebarros"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/90200916?v=4" width="100px;" alt=""/><br /><sub><b>Tiago Barros</b></sub></a><br />
 </td>
   </tr>
 </table>
 
-[![Linkedin Badge](https://img.shields.io/badge/-Tiago-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/tiagoribeirodebarros/)](https://www.linkedin.com/in/tiagoribeirodebarros/)
-[![Gmail Badge](https://img.shields.io/badge/-tiagordebarros@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:tiagordebarros@gmail.com)](mailto:tiagordebarros@gmail.com)
+[![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/tiagoribeirodebarros/)](https://www.linkedin.com/in/tiagoribeirodebarros/)
+[![Gmail Badge](https://img.shields.io/badge/-Gmail-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:tiagordebarros@gmail.com)](mailto:tiagordebarros@gmail.com)
 
 ---
 
@@ -250,10 +245,10 @@ Feito com ❤️ por Tiago Barros  ✉️  [Entre em contato!](https://beacons.a
 
 ---
 
-##  Versões do README
+## 🌎 Versões do README
 
 [Português 🇧🇷](./README.md)  |  [English 🇺🇸](./README-en.md) | [Italiano 🇮🇹](./README-it.md) 
 
 ---
 
-[⬆ Voltar ao topo](#-sobre-o-projeto)<br>
+[⬆ Voltar ao topo](#----)<br>
