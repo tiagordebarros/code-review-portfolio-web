@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "Portfolio of Web projects",
   "private": true,
+  "homepage": "https://tiagordebarros.github.io/code-review-portfolio-web/",
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
     "@fortawesome/fontawesome-svg-core": "^6.3.0",

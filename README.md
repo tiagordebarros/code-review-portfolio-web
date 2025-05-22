@@ -4,11 +4,11 @@
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/tiagordebarros/code-review-portfolio-web?color=%2304D361">
 
   <img alt="Repository size" src="https://img.shields.io/github/repo-size/tiagordebarros/code-review-portfolio-web">
-  
+
   <a href="https://github.com/tiagordebarros/code-review-portfolio-web/commits/main">
     <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/tiagordebarros/code-review-portfolio-web">
   </a>
-    
+
    <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
    <a href="https://github.com/tiagordebarros/code-review-portfolio-web/stargazers">
 
@@ -22,24 +22,24 @@
     <img alt="Code Review" title="#CodeReview" src="frontend/src/assets/img/code-review-banner-readme.png" />
 </h1>
 
-<h2 align="center"> 
+<h2 align="center">
 	 Code Review 👨🏻‍💻 Portfolio Web 🚀
 </h2>
 
 <p align="center">
  <a href="#-sobre-o-projeto">Sobre</a> •
  <a href="#%EF%B8%8F-funcionalidades">Funcionalidades</a> •
- <a href="#-layout">Layout</a> • 
- <a href="#-como-executar-o-projeto">Como executar</a> • 
- <a href="#-tecnologias">Tecnologias</a> • 
- <a href="#-agradecimentos">Agradecimentos</a> • 
- <a href="#-autor">Autor</a> • 
+ <a href="#-layout">Layout</a> •
+ <a href="#-como-executar-o-projeto">Como executar</a> •
+ <a href="#-tecnologias">Tecnologias</a> •
+ <a href="#-agradecimentos">Agradecimentos</a> •
+ <a href="#-autor">Autor</a> •
  <a href="#user-content--licença">Licença</a>
 </p>
 
 
 <p align="center">
-<a href="https://codereview-2-k5416147.deta.app/">- 🖥 Ver ao vivo -</a> 
+<a href="https://tiagordebarros.github.io/code-review-portfolio-web/">- 🖥 Ver ao vivo -</a>
 </p>
 
 ---
@@ -91,7 +91,7 @@ Este projeto é divido em duas partes:
 ### Pré-requisitos
 
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
-[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/). 
+[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/).
 Além disso, sugiro que você faça uso de um bom editor de código, como por exemplo o [VSCode](https://code.visualstudio.com/).
 
 >💡Dica: <br> Se preferir, você pode utilizar a extensão [runme](https://runme.dev/) para executar todos os comandos diretamente do readme.
@@ -126,7 +126,7 @@ $ npm run dev
 
 6. Acesse o servidor na porta 3001:
 ```bash:
-start http://localhost:3001 
+start http://localhost:3001
 ```
 >💡Dica: <br> Você pode utilizar o botão abaixo para conferir quais são as rotas diposníveis no backend e quais são os seus retornos.
 
@@ -149,7 +149,7 @@ $ npm start
 
 10. Acesse o cliente na porta 3000:
 ```bash:
-start http://localhost:3000 
+start http://localhost:3000
 ```
 
 ---
@@ -187,7 +187,7 @@ As seguintes ferramentas foram usadas na construção desse projeto:
 
 #### **Utilitários**
 
--   API: **[SendinBlue's API v3](https://www.npmjs.com/package/sib-api-v3-sdk)** 
+-   API: **[SendinBlue's API v3](https://www.npmjs.com/package/sib-api-v3-sdk)**
 -   Editor:  **[Visual Studio Code](https://code.visualstudio.com/)**  → Extensions:  **[PWA Builder](https://www.pwabuilder.com/)**
 -   Markdown:  **[StackEdit](https://stackedit.io/)**,  **[Editor.md](https://pandao.github.io/editor.md/en.html)**
 -   Commit convention:  **[Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)**
@@ -247,7 +247,7 @@ Feito com ❤️ por Tiago Barros  ✉️  [Entre em contato!](https://beacons.a
 
 ## 🌎 Versões do README
 
-[Português 🇧🇷](./README.md)  |  [English 🇺🇸](./README-en.md) | [Italiano 🇮🇹](./README-it.md) 
+[Português 🇧🇷](./README.md)  |  [English 🇺🇸](./README-en.md) | [Italiano 🇮🇹](./README-it.md)
 
 ---
 
